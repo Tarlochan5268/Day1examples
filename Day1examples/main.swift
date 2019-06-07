@@ -33,11 +33,64 @@ print(mytupleValue);
 */
 
 var str="Welcome to Swift Language"
-if(str.isEmpty)
+str.append("$$$$")   //append will work
+str+="hi"  //his also works
+if(!str.isEmpty)
 {
     print("Length = \(str.count)")
+    let s=str;
+    str=str.lowercased()
+    print(str,s);
 }
 else
 {
     print("String is Empty")
 }
+
+let c:Character
+c="H"
+print(c)
+for i in str
+{
+    print(i)
+    //print(i,separator:" ",terminator:"_")
+}
+print(" ")
+
+let strr="""
+ \u{2665}\u{2665}\u{2665}
+i Love You
+\u{2665}\u{2665}\u{2665}
+""";
+print(strr, separator: " ", terminator: "\n")
+
+let love="\u{2665}"
+print(love)
+let greeting = "Guten Tag!"
+print(greeting)
+print(greeting[greeting.startIndex])
+// G
+print(greeting[greeting.index(before: greeting.endIndex)])
+// !
+print(greeting[greeting.index(after: greeting.startIndex)])
+// u
+let index = greeting.index(greeting.startIndex, offsetBy: 7)
+print(greeting[index])
+
+for index in greeting.indices
+{
+    print("\(greeting[index])")
+}
+
+var upplimit=[..<10];print(upplimit);
+var uppp=[...10];print(uppp);
+for i in uppp
+{
+    print(i)
+}
+let str2="Hello World Swift"
+print(str2)
+let indexx = str2.firstIndex(of: " ") ?? str2.endIndex
+let newstr=str2[..<indexx]
+print(newstr)
+
