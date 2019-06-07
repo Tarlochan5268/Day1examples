@@ -8,7 +8,8 @@
 
 import Foundation
 
-var a=10;
+/*
+ var a=10;
 print("a = \(a)");
 var b=3;
 print("b = \(b)");
@@ -23,3 +24,20 @@ print("Mul = \(mul)");
 var modu=a%b;
 print("Modu = \(modu)");
 print(" 😀 nice ");
+let myTuple=(num:100,"tarlochan");
+print(myTuple);
+print(myTuple.0);
+print(myTuple.num);
+let (number,_)=mytupleValue;
+print(mytupleValue);
+*/
+
+var str="Welcome to Swift Language"
+if(str.isEmpty)
+{
+    print("Length = \(str.count)")
+}
+else
+{
+    print("String is Empty")
+}
