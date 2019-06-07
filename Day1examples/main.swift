@@ -8,5 +8,18 @@
 
 import Foundation
 
-print("Hello, World!")
-
+var a=10;
+print("a = \(a)");
+var b=3;
+print("b = \(b)");
+var sum=a+b;
+print("Sum = \(sum)");
+var sub=a-b;
+print("Sub = \(sub)");
+var div=a/b;
+print("Div = \(div)");
+var mul=a*b;
+print("Mul = \(mul)");
+var modu=a%b;
+print("Modu = \(modu)");
+print(" 😀 nice ");
