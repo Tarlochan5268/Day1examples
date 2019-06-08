@@ -31,7 +31,9 @@ print(myTuple.num);
 let (number,_)=mytupleValue;
 print(mytupleValue);
 */
+//
 
+/*
 var str="Welcome to Swift Language"
 str.append("$$$$")   //append will work
 str+="hi"  //his also works
@@ -93,4 +95,16 @@ print(str2)
 let indexx = str2.firstIndex(of: " ") ?? str2.endIndex
 let newstr=str2[..<indexx]
 print(newstr)
+print(str2.contains("Hello"))
+*/
+
+//functions start
+
+
+
+
+
+
+
+
 
