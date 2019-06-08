@@ -99,12 +99,75 @@ print(str2.contains("Hello"))
 */
 
 //functions start
+var person="Hello"
+func welcome()
+{
+    print("Hello")
+}
+func greet(name:String)
+{
+    print("Welcome \(name)");
+}
 
+func greet2(_ name:String,n:Int)
+{
+    print("Welcome \(name) \(n)");
+}
+welcome();
+var name:String="Tarlochan";
+greet(name:"Tarlochan")
+greet(name:name);
+greet2("Tarlochaan",n:2);
 
+var a=10;
+var b=20;
+var sum:Int=0;
+func sum(_ a:Int,_ b:Int) -> Int
+{
+    return a+b;
+}
+sum=sum(a,b)
+print("Sum of \(a) and \(b) = \(sum)");
+func mul(of a:Int, and b:Int) -> Int
+{
+    return a*b;
+}
+var mul:Int=0;
+mul=mul(of: a, and: b);
+print("Mul of \(a) and \(b) = \(mul)");
+//TUPLE
+let x=(100,2); //tuple
+print(x);
+print(x.0); //100
 
+let y=(a:100,b:2); //tuple
+print(y);
+print(y.a); //100
 
+let (_,x1)=x;
+print(x1);
 
+func minMax(list:[Int])->(min:Int,max:Int)
+{
+    let curMin=list.min()!;
+    let curMax=list.max()!;
+    
+    return(curMin,curMax);
+    
+}
+let array=[1,2,3,4,5]
+let result=minMax(list:array);
+print("Array = \(array)");
+print("Min = \(result.0) ");
+print("Max = \(result.1) ");
 
+func printNumbers(n:Int...)
+{
+    print("Count = \(n.count)")
+    for i in n{
+        print(i)
+    }
+}
 
-
+printNumbers(n: 1,2,3,4,5,6,7,8,9)
 
